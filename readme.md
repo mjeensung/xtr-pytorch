@@ -4,7 +4,7 @@ This repository provides a PyTorch-based reimplementation of XTR (Contextualized
 
 ## Installation
 ```bash
-$ conda create -n xtr-pytorch python=3.10
+$ conda create -n xtr-pytorch python=3.8
 $ git clone git@github.com:mjeensung/xtr-pytorch.git
 $ pip install -e .
 
@@ -43,7 +43,7 @@ for rank, (did, score, doc) in enumerate(retrieved_docs[0]):
 
 ### BEIR example
 
-To evaluate XTR on the [BEIR benchmark](https://github.com/beir-cellar/beir/), run `run_beir.py`.
+To evaluate XTR-pytorch on the [BEIR benchmark](https://github.com/beir-cellar/beir/), please run `run_beir.py`.
 ```bash
 $ pip install beir --no-deps
 $ python run_beir.py \
@@ -55,7 +55,7 @@ $ python run_beir.py \
 
 Below is the comparsion of NDCG@10 between the reported scores from [the XTR paper](https://arxiv.org/abs/2304.01982) and the scores from the reimplemented XTR in this repo across four datasets from BEIR.
 
-|              Dataset                | XTR base ([Reported](https://arxiv.org/abs/2304.01982), k=40000) | XTR base (This repo, k=8000) |
+|              Dataset                | XTR base ([Reported](https://arxiv.org/abs/2304.01982), k=40000) | XTR-pytorch base (This repo, k=8000) |
 |:----------------------------------|:--------:|:--------:|
 | MSMARCO | 45.0 | 42.9 |
 | NQ | 53.0 | 52.0 |
