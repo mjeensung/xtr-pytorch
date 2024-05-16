@@ -4,7 +4,6 @@ This repository provides a PyTorch-based reimplementation of XTR (Contextualized
 
 ## Installation
 ```bash
-$ conda create -n xtr-pytorch python=3.8
 $ git clone git@github.com:mjeensung/xtr-pytorch.git
 $ pip install -e .
 
