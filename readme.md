@@ -6,9 +6,6 @@ This repository provides a PyTorch-based reimplementation of XTR (Contextualized
 ```bash
 $ git clone git@github.com:mjeensung/xtr-pytorch.git
 $ pip install -e .
-
-# check if gpu is available
-$ python -c "import torch;print(torch.cuda.is_available())" # `True`
 ```
 
 ## Usage
