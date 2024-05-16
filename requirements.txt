@@ -1,0 +1,7 @@
+torch==1.13.1
+transformers==4.40.2
+faiss-gpu==1.7.2
+tqdm
+nltk
+numpy
+pytrec_eval
